@@ -1,5 +1,5 @@
 {
-  "name": "excel4node",
+  "name": "excel4nodejs",
   "version": "1.2.1",
   "description": "Library to create Formatted Excel Files.",
   "engines": {
@@ -28,10 +28,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "git://github.com/natergj/excel4node.git"
+    "url": "git:/github.com/jetsonjohn/excel4node.git"
   },
   "bugs": {
-    "url": "https://github.com/natergj/excel4node/labels/bug"
+    "url": "https://github.com/jetsonjohn/excel4node/labels/bug"
   },
   "scripts": {
     "test": "NODE_ENV=test ./node_modules/tape/bin/tape -r babel-register ./tests/*.test.js",
