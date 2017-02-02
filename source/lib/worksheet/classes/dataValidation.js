@@ -178,8 +178,8 @@ class DataValidationCollection { // §18.3.1.33 dataValidations (Data Validation
         let valsEle = ele.ele('dataValidations').att('count', this.length);
         this.items.forEach((val) => {
             val.addToXMLele(valsEle);
+            valsEle.up();
         });
-        valsEle.up();
     }
 }
 
