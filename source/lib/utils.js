@@ -138,6 +138,7 @@ let getExcelRowCol = (str) => {
  * getExcelTS(new Date('08/13/1981'));
  */
 let getExcelTS = (date) => {
+    if(!date) return null;
 
     let thisDt = new Date(date);
     thisDt.setDate(thisDt.getDate() + 1);

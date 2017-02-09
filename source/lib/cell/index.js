@@ -109,8 +109,8 @@ function formulaSetter(val) {
 }
 
 function dateSetter(val) {
-    let thisDate = new Date(val);
-    if (isNaN(thisDate.getTime())) {
+  var thisDate = val ? new Date(val) : null;
+  if (thisDate && isNaN(thisDate.getTime())) {
         throw new TypeError(util.format('Invalid date sent to date function of cells. %s could not be converted to a date.', val));
     }
     if (this.merged !== true) {

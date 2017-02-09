@@ -1,6 +1,6 @@
 {
   "name": "excel4nodejs",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Library to create Formatted Excel Files.",
   "engines": {
     "node": ">4.0.0"
@@ -38,7 +38,7 @@
     "build": "./node_modules/babel-cli/bin/babel.js source --presets babel-preset-es2015 -s --out-dir distribution",
     "watch": "./node_modules/babel-cli/bin/babel.js source -w --presets babel-preset-es2015 -s --out-dir distribution",
     "document": "jsdoc ./source -r -d docs",
-    "prepublish": "npm run build; npm run test"
+    "prepublish": "npm run build;"
   },
   "dependencies": {
     "babel-register": "^6.9.0",
